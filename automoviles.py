@@ -18,7 +18,7 @@ class Automoviles(Terrestres):
         self. torque = torque
 
     def get_automovil(self, matricula):
-        with open("C:/Users/jfdaza/Documents/Python/Transito/data/automoviles.txt", "r") as automoviles:
+        with open("./Transito/data/automoviles.txt", "r") as automoviles:
             for auto in automoviles:
                 data = auto.split('|')
                 if  matricula == data[0]:
@@ -35,7 +35,7 @@ class Automoviles(Terrestres):
 
 
     def set_autimovil(self):
-        with open("C:/Users/jfdaza/Documents/Python/Transito/data/automoviles.txt", "a") as automoviles:
+        with open("./Transito/data/automoviles.txt", "a") as automoviles:
             automoviles.write(f"{self.matricula}|{self.tipo_automovil}|{self.color}|{self.traccion}|{self.cilindraje}|{self.torque}\n")
             automoviles.close()
             return True

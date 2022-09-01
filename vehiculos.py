@@ -7,7 +7,7 @@ class Vehiculo:
         self.tipo = tipo
 
     def get_vehiculo(self, matricula):
-        with open("C:/Users/Pipe/Documents/Python/transito/data/vehiculos.txt") as vehiculos:
+        with open("./transito/data/vehiculos.txt") as vehiculos:
             for vehiculo in vehiculos:
                 data = vehiculo.split("|")
                 if matricula == data[0]:
@@ -20,7 +20,7 @@ class Vehiculo:
 
 
     def set_vehiculo(self):
-        with open("C:/Users/Pipe/Documents/Python/transito/datavehiculos.txt") as vehiculos:
+        with open("./transito/datavehiculos.txt") as vehiculos:
             vehiculos.write(f"{self.matricula}|{self.marca}|{self.modelo}\n")
             vehiculos.close()
             return True

@@ -10,7 +10,7 @@ class Terrestres(Vehiculos):
 
 
     def get_vehiculo(self, matricula):
-        with open("C:/Users/Pipe/Documents/Python/transito/data/terrestres.txt") as terrestres:
+        with open("./transito/data/terrestres.txt") as terrestres:
             for vehiculo in terrestres:
                 data = vehiculo.split("|")
                 if matricula == data[0] and data[1]:
