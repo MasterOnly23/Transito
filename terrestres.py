@@ -14,7 +14,7 @@ class Terrestres(Vehiculos):
             for vehiculo in terrestres:
                 data = vehiculo.split("|")
                 if matricula == data[0] and data[1]:
-                    My_vehiculo = Vehiculos.
+                    My_vehiculo = Vehiculos
                     vehiculos.close()
                     return data
 
