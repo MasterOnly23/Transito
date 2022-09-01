@@ -7,7 +7,7 @@ class Vehiculo:
         self.tipo = tipo
 
     def get_vehiculo(self, matricula):
-        with open("./transito/data/vehiculos.txt") as vehiculos:
+        with open("C:/Users/jfdaza/Documents/Python/Transito/data/vehiculos.txt") as vehiculos:
             for vehiculo in vehiculos:
                 data = vehiculo.split("|")
                 if matricula == data[0]:
