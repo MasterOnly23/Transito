@@ -9,14 +9,15 @@ class Terrestres(Vehiculos):
         self.traccion = traccion
 
 
-    def get_vehiculo(self, matricula):
+    def get_terrestre(self, matricula):
         with open("./transito/data/terrestres.txt") as terrestres:
             for vehiculo in terrestres:
                 data = vehiculo.split("|")
                 if matricula == data[0] and data[1]:
-                    My_vehiculo = Vehiculos
+                    My_vehiculo = Vehiculos()
+                    data_vehiculo_terrestre = My_vehiculo.get_vehiculo(data[0])
                     vehiculos.close()
-                    return data
+                    return data + data_vehiculo_terrestre
 
             else:
                 vehiculos.close()
