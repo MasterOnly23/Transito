@@ -25,8 +25,3 @@ class Vehiculo:
             vehiculos.close()
             return True
 
-    def arrancar(self, vel_final):
-        return f"*** arrancando... *** hasta {vel_final}"
-
-    def frenar(self):
-        return "*** frenando... ***"
