@@ -16,7 +16,7 @@ class Vehiculo:
 
             else:
                 vehiculos.close()
-                return f"No se encontro el vehiculo con matricula {self.matricula}"
+                return f"No se encontro el vehiculo con matricula {matricula}"
 
 
     def set_vehiculo(self):
